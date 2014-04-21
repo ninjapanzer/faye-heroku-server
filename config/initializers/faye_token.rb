@@ -1,1 +1,1 @@
-FAYE_TOKEN = "anything"
+FAYE_TOKEN = "5c778f39-0d57-4a47-9203-6cad70c56b34"
