@@ -17,5 +17,6 @@ class ServerAuth
 end
 
 faye_server = Faye::RackAdapter.new(:mount => '/faye', :timeout => 25)
-faye_server.add_extension(ServerAuth.new)
+Faye::WebSocket.load_adapter('thin')
+#faye_server.add_extension(ServerAuth.new)
 run faye_server
